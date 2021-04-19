@@ -9,7 +9,6 @@ public class MainCameraBehaviour : MonoBehaviour
 
     private Vector3 offsetVector = new Vector3(0,2,-5);
 
-    private float timeCount = 0.0f;
     private Quaternion currentRotation;
 
     // Start is called before the first frame update

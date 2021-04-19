@@ -31,4 +31,13 @@ public class PlayerBehaviour : MonoBehaviour
 
         transform.position += targetDirection * moveVertical * Time.deltaTime * moveSpeed;
     }
+
+    void OnTriggerEnter(Collider other)
+    {
+        if(other.gameObject.CompareTag("Collectable"))
+        {
+            //other.gameObject.SetActive(false);
+            Destroy(other.gameObject);
+        }
+    }
 }
