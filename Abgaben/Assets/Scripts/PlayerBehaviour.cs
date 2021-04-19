@@ -4,6 +4,15 @@ using UnityEngine;
 
 public class PlayerBehaviour : MonoBehaviour
 {
+
+    private float angle = 0.0f;
+
+    [SerializeField]
+    private float rotationSpeed = 1.0f;
+
+    [SerializeField]
+    private float moveSpeed = 1.0f;
+
     // Start is called before the first frame update
     void Start()
     {
@@ -13,9 +22,13 @@ public class PlayerBehaviour : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        float moveHorizontal = Input.GetAxis("Horizontal");
         float moveVertical = Input.GetAxis("Vertical");
+        angle += Input.GetAxis("Horizontal") * Time.deltaTime * rotationSpeed;
 
-        transform.position += new Vector3(moveHorizontal * Time.deltaTime,0,moveVertical * Time.deltaTime);
+        Vector3 targetDirection = new Vector3(Mathf.Sin(angle),0,Mathf.Cos(angle));
+
+        transform.rotation = Quaternion.LookRotation(targetDirection);
+
+        transform.position += targetDirection * moveVertical * Time.deltaTime * moveSpeed;
     }
 }
