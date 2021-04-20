@@ -346,7 +346,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   rotationSpeed: 1
-  moveSpeed: 2
+  moveSpeed: 7
 --- !u!65 &802881417
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -469,7 +469,9 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   myPrefab: {fileID: 378154164590445826, guid: 6b49be2bbda36fa4d8563ed021c4a988, type: 3}
+  enemy: {fileID: 4550861123590656830, guid: 18d27fa505047fb47a4096c654c05cbe, type: 3}
   objectCount: 200
+  enemyCount: 20
 --- !u!4 &934023676
 Transform:
   m_ObjectHideFlags: 0
