@@ -40,9 +40,9 @@ public class PlayerBehaviour : MonoBehaviour
 
         Vector3 targetDirection = new Vector3(Mathf.Sin(angle),0,Mathf.Cos(angle));
 
-        transform.rotation = Quaternion.LookRotation(targetDirection);
+        transform.localRotation = Quaternion.LookRotation(targetDirection);
 
-        transform.position += targetDirection * moveVertical * Time.deltaTime * moveSpeed;
+        transform.localPosition += targetDirection * moveVertical * Time.deltaTime * moveSpeed;
     }
 
     void OnTriggerEnter(Collider other)

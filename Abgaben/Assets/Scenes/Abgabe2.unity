@@ -150,7 +150,7 @@ RectTransform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 53025034}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalPosition: {x: 0, y: 0, z: -0}
   m_LocalScale: {x: 0.83284, y: 0.9190742, z: 1}
   m_Children:
   - {fileID: 1894117304}
@@ -159,7 +159,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -362, y: -122}
+  m_AnchoredPosition: {x: -362, y: -193}
   m_SizeDelta: {x: 160, y: 160}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &53025036
@@ -272,7 +272,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 124022506}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 2.04, y: 0.001, z: -0.74}
+  m_LocalPosition: {x: 2.5, y: 0.001, z: -4}
   m_LocalScale: {x: 2.60416, y: 1, z: 2.60416}
   m_Children: []
   m_Father: {fileID: 1917404781}
@@ -358,7 +358,7 @@ MonoBehaviour:
     e00: 2.60416
     e01: 0
     e02: 0
-    e03: 2.04
+    e03: 2.5
     e10: 0
     e11: 1
     e12: 0
@@ -366,7 +366,7 @@ MonoBehaviour:
     e20: 0
     e21: 0
     e22: 2.60416
-    e23: -0.74
+    e23: -4
     e30: 0
     e31: 0
     e32: 0
@@ -615,7 +615,7 @@ MeshRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 10303, guid: 0000000000000000f000000000000000, type: 0}
+  - {fileID: 2100000, guid: 767e17ea9fd66b3408b70edaa8c3c176, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -659,35 +659,6 @@ Transform:
   m_Father: {fileID: 1917404781}
   m_RootOrder: 2
   m_LocalEulerAnglesHint: {x: 90, y: 0, z: 0}
---- !u!21 &515017573
-Material:
-  serializedVersion: 6
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_Name: 'stonesMaterial
-
-    28158'
-  m_Shader: {fileID: 10752, guid: 0000000000000000f000000000000000, type: 0}
-  m_ShaderKeywords: 
-  m_LightmapFlags: 5
-  m_EnableInstancingVariants: 0
-  m_DoubleSidedGI: 0
-  m_CustomRenderQueue: -1
-  stringTagMap: {}
-  disabledShaderPasses: []
-  m_SavedProperties:
-    serializedVersion: 3
-    m_TexEnvs:
-    - _MainTex:
-        m_Texture: {fileID: 2800000, guid: 2f8006e0bd1d4eb5804b29c94c05166e, type: 3}
-        m_Scale: {x: 1, y: 1}
-        m_Offset: {x: 0, y: 0}
-    m_Floats: []
-    m_Colors:
-    - _Color: {r: 0.82089555, g: 0.82089555, b: 0.82089555, a: 1}
-  m_BuildTextureStacks: []
 --- !u!43 &526241706
 Mesh:
   m_ObjectHideFlags: 0
@@ -888,7 +859,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -117.1, y: -247.5}
+  m_AnchoredPosition: {x: -120, y: -193}
   m_SizeDelta: {x: 160, y: 160}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &585009193
@@ -1381,7 +1352,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 808750449}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: -7.47, y: 0.001, z: -2.45}
+  m_LocalPosition: {x: -7.5, y: 0.001, z: -4}
   m_LocalScale: {x: 2.74344, y: 1, z: 2.74344}
   m_Children: []
   m_Father: {fileID: 1917404781}
@@ -1467,7 +1438,7 @@ MonoBehaviour:
     e00: 2.74344
     e01: 0
     e02: 0
-    e03: -7.47
+    e03: -7.5
     e10: 0
     e11: 1
     e12: 0
@@ -1475,7 +1446,7 @@ MonoBehaviour:
     e20: 0
     e21: 0
     e22: 2.74344
-    e23: -2.45
+    e23: -4
     e30: 0
     e31: 0
     e32: 0
@@ -1722,7 +1693,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 950575756}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 7.63, y: 0.001, z: -2.54}
+  m_LocalPosition: {x: 7.5, y: 0.001, z: -4}
   m_LocalScale: {x: 2.95028, y: 1, z: 2.95028}
   m_Children: []
   m_Father: {fileID: 1917404781}
@@ -1808,7 +1779,7 @@ MonoBehaviour:
     e00: 2.95028
     e01: 0
     e02: 0
-    e03: 7.63
+    e03: 7.5
     e10: 0
     e11: 1
     e12: 0
@@ -1816,7 +1787,7 @@ MonoBehaviour:
     e20: 0
     e21: 0
     e22: 2.95028
-    e23: -2.54
+    e23: -4
     e30: 0
     e31: 0
     e32: 0
@@ -1859,7 +1830,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 96.8, y: -44.6}
+  m_AnchoredPosition: {x: 120, y: -193}
   m_SizeDelta: {x: 160, y: 160}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1361130626
@@ -1972,7 +1943,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1361568298}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: -2.47, y: 0.001, z: -4.82}
+  m_LocalPosition: {x: -2.5, y: 0.001, z: -4}
   m_LocalScale: {x: 2.85436, y: 1, z: 2.85436}
   m_Children: []
   m_Father: {fileID: 1917404781}
@@ -2058,7 +2029,7 @@ MonoBehaviour:
     e00: 2.85436
     e01: 0
     e02: 0
-    e03: -2.47
+    e03: -2.5
     e10: 0
     e11: 1
     e12: 0
@@ -2066,7 +2037,7 @@ MonoBehaviour:
     e20: 0
     e21: 0
     e22: 2.85436
-    e23: -4.82
+    e23: -4
     e30: 0
     e31: 0
     e32: 0
@@ -2109,7 +2080,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 366.2, y: -122}
+  m_AnchoredPosition: {x: 362, y: -193}
   m_SizeDelta: {x: 160, y: 160}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1369086465
@@ -2358,6 +2329,35 @@ Mesh:
     offset: 0
     size: 0
     path: 
+--- !u!21 &1792006115
+Material:
+  serializedVersion: 6
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_Name: 'stonesMaterial
+
+    18412'
+  m_Shader: {fileID: 10752, guid: 0000000000000000f000000000000000, type: 0}
+  m_ShaderKeywords: 
+  m_LightmapFlags: 5
+  m_EnableInstancingVariants: 0
+  m_DoubleSidedGI: 0
+  m_CustomRenderQueue: -1
+  stringTagMap: {}
+  disabledShaderPasses: []
+  m_SavedProperties:
+    serializedVersion: 3
+    m_TexEnvs:
+    - _MainTex:
+        m_Texture: {fileID: 2800000, guid: 2f8006e0bd1d4eb5804b29c94c05166e, type: 3}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    m_Floats: []
+    m_Colors:
+    - _Color: {r: 0.82089555, g: 0.82089555, b: 0.82089555, a: 1}
+  m_BuildTextureStacks: []
 --- !u!1 &1894117303
 GameObject:
   m_ObjectHideFlags: 0
@@ -2650,7 +2650,7 @@ MeshRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 515017573}
+  - {fileID: 1792006115}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
