@@ -25,15 +25,15 @@ public class ZombieBehaviour : MonoBehaviour
     }
 
     // Update is called once per frame
-    void Update()
+    void FixedUpdate()
     {
-        Vector3 playerEnemyVector = player.transform.localPosition - transform.localPosition;
+        Vector3 playerEnemyVector = player.transform.position - transform.position;
         if(playerEnemyVector.magnitude < distance)
         {
             zombieAnim.Play("Walk");
             Quaternion targetRotation = Quaternion.LookRotation(playerEnemyVector, Vector3.up);
-            transform.localRotation = targetRotation;
-            transform.localPosition += new Vector3(playerEnemyVector.x,0,playerEnemyVector.z) * Time.deltaTime * enemySpeed;
+            transform.rotation = targetRotation;
+            transform.position += new Vector3(playerEnemyVector.x,0,playerEnemyVector.z) * Time.deltaTime * enemySpeed;
             isWalking = true;
         } else if(playerEnemyVector.magnitude > distance && isWalking) {
             isWalking = false;

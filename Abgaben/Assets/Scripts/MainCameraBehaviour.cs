@@ -18,7 +18,7 @@ public class MainCameraBehaviour : MonoBehaviour
     }
 
     // Update is called once per frame
-    void Update()
+    void FixedUpdate()
     {
         Vector3 offsetRotated = target.transform.rotation * offsetVector;
 

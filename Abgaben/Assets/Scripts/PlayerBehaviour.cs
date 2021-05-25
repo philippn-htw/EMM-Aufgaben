@@ -6,7 +6,6 @@ public class PlayerBehaviour : MonoBehaviour
 {
 
     private float angle = 0.0f;
-    private float moveVertical = 0.0f;
 
     [SerializeField]
     private float rotationSpeed = 1.0f;
@@ -14,8 +13,8 @@ public class PlayerBehaviour : MonoBehaviour
     [SerializeField]
     private float moveSpeed = 1.0f;
 
-    public float externHorizontal = 0.0f;
-    public float externVertical = 0.0f;
+    public float externHorizontal;
+    public float externVertical;
 
     // Start is called before the first frame update
     void Start()
@@ -24,25 +23,16 @@ public class PlayerBehaviour : MonoBehaviour
     }
 
     // Update is called once per frame
-    void Update()
+    void FixedUpdate()
     {
-        if(Input.GetAxis("Vertical")!=0) {
-            moveVertical = Input.GetAxis("Vertical");
-        } else {
-            moveVertical = externVertical;
-        }
-
-        if(Input.GetAxis("Horizontal")!=0) {
-            angle += Input.GetAxis("Horizontal") * Time.deltaTime * rotationSpeed;
-        } else {
-            angle += externHorizontal * Time.deltaTime * rotationSpeed;
-        }
+        float moveVertical = Input.GetAxis("Vertical");
+        angle += Input.GetAxis("Horizontal") * Time.deltaTime * rotationSpeed;
 
         Vector3 targetDirection = new Vector3(Mathf.Sin(angle),0,Mathf.Cos(angle));
 
-        transform.localRotation = Quaternion.LookRotation(targetDirection);
+        transform.rotation = Quaternion.LookRotation(targetDirection);
 
-        transform.localPosition += targetDirection * moveVertical * Time.deltaTime * moveSpeed;
+        transform.position += targetDirection * moveVertical * Time.deltaTime * moveSpeed;
     }
 
     void OnTriggerEnter(Collider other)
